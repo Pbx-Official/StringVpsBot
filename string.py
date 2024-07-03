@@ -10,7 +10,6 @@ try:
     from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
 except:
     os.system("pip install instagrapi")
-    from instagrapi import Client as IClient
     from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
 
 try:
