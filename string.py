@@ -16,7 +16,6 @@ try:
     from pyrogram import Client as PClient
 except:
     os.system("pip install pyrogram")
-    from pyrogram import Client as PClient
 
 try:
     from telethon.sessions import StringSession
