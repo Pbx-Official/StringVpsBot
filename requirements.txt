@@ -1,0 +1,2 @@
+PyGithub
+git+https://github.com/badmunda98/Telethon
