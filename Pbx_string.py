@@ -10,12 +10,14 @@ try:
     from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
 except:
     os.system("pip install instagrapi")
+    from instagrapi import Client as IClient
     from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
 
 try:
     from pyrogram import Client as PClient
 except:
     os.system("pip install pyrogram")
+    from pyrogram import Client as PClient
 
 try:
     from telethon.sessions import StringSession
@@ -31,9 +33,9 @@ except:
 
 
 def main():
-    print("Tᴇᴀᴍ Pʙx ! !")
-    print("Hᴇʟʟᴏ!! Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴀʟʟ  Sᴇssɪᴏɴ Gᴇɴᴇʀᴀᴛᴏʀ\n")
-    print("Hᴜᴍᴀɴ Vᴇʀɪғɪᴄᴀᴛɪᴏɴ Rᴇǫᴜɪʀᴇᴅ !!")
+    print("T E A M    P B X    ! !")
+    print("Hello!! Welcome to PbxBot Session Generator\n")
+    print("Human Verification Required !!")
     while True:
         verify = int(randint(1, 50))
         okvai = int(input(f"Enter {verify} to continue: "))
@@ -42,7 +44,7 @@ def main():
             while True:
                 library = input("\nYour Choice: ")
                 if library == "1":
-                    generate_badbot_session()
+                    generate_hellbot_session()
                     break
                 elif library == "2":
                     generate_telethon_session()
@@ -60,18 +62,18 @@ def main():
             print("Verification Failed! Try Again:")
 
 
-def generate_badbot_session():
+def generate_hellbot_session():
     print("!!! PbxBOT SESSION !!!")
     print("One session for all PbxBot's Project.")
     api_id = int(input("\nEnter APP ID here: "))
     api_hash = input("\nEnter API_HASH here: ")
-    with PClient(name="baduser", api_id=api_id, api_hash=api_hash, in_memory=True) as bad:
+    with PClient(name="helluser", api_id=api_id, api_hash=api_hash, in_memory=True) as hell:
         print("\nYour PBXBOT SESSION is saved in your telegram saved messages.")
-        _session = bad.export_session_string()
-        bad_session = badbot_session(_session)
-        bad.send_message(
+        _session = hell.export_session_string()
+        hell_session = hellbot_session(_session)
+        hell.send_message(
             "me",
-            f"#PBXBOT_SESSION \n\n`{bad_session}`",
+            f"#PBXBOT_SESSION \n\n`{hell_session}`",
         )
 
 
@@ -79,28 +81,28 @@ def generate_pyro_session():
     print("Pyrogram Session for Music Bot!")
     APP_ID = int(input("\nEnter APP ID here: "))
     API_HASH = input("\nEnter API HASH here: ")
-    with PClient(name="baduser", api_id=APP_ID, api_hash=API_HASH, in_memory=True) as badbot:
-        print("\nYour Pyrogram Session Is sent in your Telegram Saved Messages.")
-        badbot.send_message(
+    with PClient(name="helluser", api_id=APP_ID, api_hash=API_HASH, in_memory=True) as hellbot:
+        print("\nYour PBXBot Session Is sent in your Telegram Saved Messages.")
+        hellbot.send_message(
             "me",
-            f"#BAD #PYROGRAM\n\n`{badbot.export_session_string()}`",
+            f"#PBXBOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
         )
 
 
 def generate_telethon_session():
-    print("\nTelethon Session For TelethonBot!")
+    print("\nTelethon Session For HellBot!")
     APP_ID = int(input("\nEnter APP ID here: "))
     API_HASH = input("\nEnter API HASH here: ")
-    with TelegramClient(StringSession(), APP_ID, API_HASH) as badbot:
-        print("\nYour Telethon Session Is sent in your Telegram Saved Messages.")
-        badbot.send_message(
+    with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
+        print("\nYour PbxBot Session Is sent in your Telegram Saved Messages.")
+        hellbot.send_message(
             "me",
-            f"#BAD #TELETHON \n\n`{badbot.session.save()}`",
+            f"#PBXBOT #TELETHON \n\n`{hellbot.session.save()}`",
         )
 
 
 def generate_insta_session():
-    print("Instagram Session For Tg bot!")
+    print("Instagram Session For HellBot!")
     cl = IClient()
     username = input("Enter your Instagram Username: ")
     password = input("Enter your Instagram Password: ")
@@ -124,7 +126,7 @@ def challenge_code(username, choice):
     return otp
 
 
-def badbot(text):
+def hellbot(text):
     res = ''.join(
         map(
             random.choice,
@@ -134,7 +136,7 @@ def badbot(text):
     return res.strip()
 
 
-def badbot_session(session):
+def hellbot_session(session):
     pyro_format = {
         351: ">B?256sI?",
         356: ">B?256sQ?",
@@ -149,7 +151,7 @@ def badbot_session(session):
         5: "91.108.56.130",
     }
 
-    error_msg = "Error in generating session! Report it in ll_BAD_MUNDA_ll "
+    error_msg = "Error in generating session! Report it in Hell Chats"
 
     # converting pyrogram session
     if len(session) in pyro_format.keys():
@@ -164,6 +166,7 @@ def badbot_session(session):
                 base64.urlsafe_b64decode(session + "=" * (-len(session) % 4)),
             )
 
+        # https://github.com/HellBoy-OP/Telethon/blob/v1/telethon/sessions/string.py
         new_session = CURRENT_VERSION + StringSession.encode(
             struct.pack(
                 _STRUCT_PREFORMAT.format(4),
@@ -173,10 +176,11 @@ def badbot_session(session):
                 auth_key
             )
         )
-        return f"=={badbot('bad')}{new_session}{badbot('bot')}=="
+        return f"=={hellbot('hell')}{new_session}{hellbot('bot')}=="
     else:
         return error_msg
 
 
 main()
+
     
