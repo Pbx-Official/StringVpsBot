@@ -1,9 +1,15 @@
-
+#!/usr/bin/python3
+# Ultroid - UserBot
+# Copyright (C) 2021-2023 TeamUltroid
+#
+# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
+# PLease read the GNU Affero General Public License in
+# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 import os
 from time import sleep
 
-BADBOY = r"""
+ULTROID = r"""
   _    _ _ _             _     _
  | |  | | | |           (_)   | |
  | |  | | | |_ _ __ ___  _  __| |
@@ -57,7 +63,7 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(BADBOY)
+    print(ULTROID)
     print(x)
 
     # the imports
@@ -74,12 +80,12 @@ def telethon_session():
 
     # logging in
     try:
-        with TelegramClient(StringSession(), API_ID, API_HASH) as badboy:
-            print("Generating a string session for •BADBOY•")
+        with TelegramClient(StringSession(), API_ID, API_HASH) as ultroid:
+            print("Generating a string session for •ULTROID•")
             try:
-                badboy.send_message(
+                ultroid.send_message(
                     "me",
-                    f"**BADBOY** `SESSION`:\n\n`{badboy.session.save()}`\n\n**Do not share this anywhere!**",
+                    f"**ULTROID** `SESSION`:\n\n`{ultroid.session.save()}`\n\n**Do not share this anywhere!**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -87,7 +93,7 @@ def telethon_session():
                 return
             except UserIsBotError:
                 print("You are trying to Generate Session for your Bot's Account?")
-                print("Here is That!\n{badboy.session.save()}\n\n")
+                print("Here is That!\n{ultroid.session.save()}\n\n")
                 print("NOTE: You can't use that as User Session..")
     except ApiIdInvalidError:
         print(
@@ -119,14 +125,14 @@ def pyro_session():
         from pyrogram import Client
         
     clear_screen()
-    print(BADBOY)
+    print(ULTROID)
     print(x)
 
     # generate a session
     API_ID, API_HASH = get_api_id_and_hash()
     print("Enter phone number when asked.\n\n")
     try:
-        with Client(name="badboy", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
+        with Client(name="ultroid", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
             ss = pyro.export_session_string()
             pyro.send_message(
                 "me",
@@ -141,11 +147,11 @@ def pyro_session():
 
 def main():
     clear_screen()
-    print(BADBOY)
+    print(ULTROID)
     try:
         type_of_ss = int(
             input(
-                "\nbadboy supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
+                "\nUltroid supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
             )
         )
     except Exception as e:
