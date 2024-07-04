@@ -140,7 +140,7 @@ def pyro_session():
 
 def main():
     clear_screen()
-    print(BADBOY)
+    print(BadBoy)
     try:
         type_of_ss = int(
             input(
