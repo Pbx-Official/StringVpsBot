@@ -1,12 +1,15 @@
+
+
 import os
 from time import sleep
 
 BADBOY = r"""
- ____  ____  ____     ____ _____ ____  _  _      _____
-/  __\/  _ \/  _ \   / ___Y__ __Y  __\/ \/ \  /|/  __/
-| | //| / \|| | \|   |    \ / \ |  \/|| || |\ ||| |  _
-| |_\\| |-||| |_/|   \___ | | | |    /| || | \||| |_//
-\____/\_/ \|\____/   \____/ \_/ \_/\_\\_/\_/  \|\____\
+  _    _ _ _             _     _
+ | |  | | | |           (_)   | |
+ | |  | | | |_ _ __ ___  _  __| |
+ | |  | | | __| '__/ _ \| |/ _  |
+ | |__| | | |_| | | (_) | | (_| |
+  \____/|_|\__|_|  \___/|_|\__,_|
 """
 
 
@@ -32,7 +35,7 @@ def clear_screen():
 
 def get_api_id_and_hash():
     print(
-        "Get your API ID and API HASH from my.telegram.org to proceed.\n\n",
+        "Get your API ID and API HASH from my.telegram.org or @ScrapperRoBot to proceed.\n\n",
     )
     try:
         API_ID = int(input("Please enter your API ID: "))
@@ -71,12 +74,12 @@ def telethon_session():
 
     # logging in
     try:
-        with TelegramClient(StringSession(), API_ID, API_HASH) as BADBOY:
+        with TelegramClient(StringSession(), API_ID, API_HASH) as badboy:
             print("Generating a string session for •BADBOY•")
             try:
-                BADBOY.send_message(
+                badboy.send_message(
                     "me",
-                    f"**BADBOY** `SESSION`:\n\n`{BADBOY.session.save()}`\n\n**Do not share this anywhere!**",
+                    f"**BADBOY** `SESSION`:\n\n`{badboy.session.save()}`\n\n**Do not share this anywhere!**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -84,7 +87,7 @@ def telethon_session():
                 return
             except UserIsBotError:
                 print("You are trying to Generate Session for your Bot's Account?")
-                print("Here is That!\n{BADBOY.session.save()}\n\n")
+                print("Here is That!\n{badboy.session.save()}\n\n")
                 print("NOTE: You can't use that as User Session..")
     except ApiIdInvalidError:
         print(
@@ -100,7 +103,7 @@ def telethon_session():
     except Exception as er:
         print("Unexpected Error Occurred while Creating Session")
         print(er)
-        print("If you think It as a Bug, Report to @PBX_PERMOT.\n\n")
+        print("If you think It as a Bug, Report to @UltroidSupportChat.\n\n")
 
 
 def pyro_session():
@@ -123,11 +126,11 @@ def pyro_session():
     API_ID, API_HASH = get_api_id_and_hash()
     print("Enter phone number when asked.\n\n")
     try:
-        with Client(name="BADBOY", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
+        with Client(name="badboy", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
             ss = pyro.export_session_string()
             pyro.send_message(
                 "me",
-                f"`{ss}`\n\nAbove is your Pyrogram Session String for @PBX_PERMOT. **DO NOT SHARE it.**",
+                f"`{ss}`\n\nAbove is your Pyrogram Session String for @TheUltroid. **DO NOT SHARE it.**",
             )
             print("Session has been sent to your saved messages!")
             exit(0)
@@ -142,7 +145,7 @@ def main():
     try:
         type_of_ss = int(
             input(
-                "\nBADBOY supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
+                "\nbadboy supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
             )
         )
     except Exception as e:
