@@ -1,7 +1,7 @@
 import os
 from time import sleep
 
-BadBoy = r"""
+BADBOY = r"""
  ____  ____  ____     ____ _____ ____  _  _      _____
 /  __\/  _ \/  _ \   / ___Y__ __Y  __\/ \/ \  /|/  __/
 | | //| / \|| | \|   |    \ / \ |  \/|| || |\ ||| |  _
@@ -54,7 +54,7 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(BadBoy)
+    print(BADBOY)
     print(x)
 
     # the imports
@@ -71,12 +71,12 @@ def telethon_session():
 
     # logging in
     try:
-        with TelegramClient(StringSession(), API_ID, API_HASH) as BadBoy:
+        with TelegramClient(StringSession(), API_ID, API_HASH) as BADBOY:
             print("Generating a string session for •BADBOY•")
             try:
-                BadBoy.send_message(
+                BADBOY.send_message(
                     "me",
-                    f"**BADBOY** `SESSION`:\n\n`{BadBoy.session.save()}`\n\n**Do not share this anywhere!**",
+                    f"**BADBOY** `SESSION`:\n\n`{BADBOY.session.save()}`\n\n**Do not share this anywhere!**",
                 )
                 print(
                     "Your SESSION has been generated. Check your Telegram saved messages!"
@@ -84,7 +84,7 @@ def telethon_session():
                 return
             except UserIsBotError:
                 print("You are trying to Generate Session for your Bot's Account?")
-                print("Here is That!\n{BadBoy.session.save()}\n\n")
+                print("Here is That!\n{BADBOY.session.save()}\n\n")
                 print("NOTE: You can't use that as User Session..")
     except ApiIdInvalidError:
         print(
@@ -116,14 +116,14 @@ def pyro_session():
         from pyrogram import Client
         
     clear_screen()
-    print(BadBoy)
+    print(BADBOY)
     print(x)
 
     # generate a session
     API_ID, API_HASH = get_api_id_and_hash()
     print("Enter phone number when asked.\n\n")
     try:
-        with Client(name="BadBoy", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
+        with Client(name="BADBOY", api_id=API_ID, api_hash=API_HASH, in_memory=True) as pyro:
             ss = pyro.export_session_string()
             pyro.send_message(
                 "me",
@@ -138,11 +138,11 @@ def pyro_session():
 
 def main():
     clear_screen()
-    print(BadBoy)
+    print(BADBOY)
     try:
         type_of_ss = int(
             input(
-                "\nBadBoy supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
+                "\nBADBOY supports both telethon as well as pyrogram sessions.\n\nWhich session do you want to generate?\n1. Telethon Session.\n2. Pyrogram Session.\n\nEnter choice:  "
             )
         )
     except Exception as e:
