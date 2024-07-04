@@ -34,7 +34,7 @@ except:
 
 def main():
     print("T E A M    P B X    ! !")
-    print("Hello!! Welcome to PbxBot Session Generator\n")
+    print("Hello!! Welcome to  Session Generator\n")
     print("Human Verification Required !!")
     while True:
         verify = int(randint(1, 50))
@@ -85,24 +85,24 @@ def generate_pyro_session():
         print("\nYour PBXBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#PBXBOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
+            f"#PYBOT #PYROGRAM\n\n`{hellbot.export_session_string()}`",
         )
 
 
 def generate_telethon_session():
-    print("\nTelethon Session For HellBot!")
+    print("\nTelethon Session For telethoneBot!")
     APP_ID = int(input("\nEnter APP ID here: "))
     API_HASH = input("\nEnter API HASH here: ")
     with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
-        print("\nYour PbxBot Session Is sent in your Telegram Saved Messages.")
+        print("\nYour telethoneBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#PBXBOT #TELETHON \n\n`{hellbot.session.save()}`",
+            f"#TELETHONBOT #TELETHON \n\n`{hellbot.session.save()}`",
         )
 
 
 def generate_insta_session():
-    print("Instagram Session For HellBot!")
+    print("Instagram Session For PbxBot!")
     cl = IClient()
     username = input("Enter your Instagram Username: ")
     password = input("Enter your Instagram Password: ")
@@ -151,7 +151,7 @@ def hellbot_session(session):
         5: "91.108.56.130",
     }
 
-    error_msg = "Error in generating session! Report it in Hell Chats"
+    error_msg = "Error in generating session! Report it in @ll_BAD_MUNDA_ll Chats"
 
     # converting pyrogram session
     if len(session) in pyro_format.keys():
@@ -166,7 +166,7 @@ def hellbot_session(session):
                 base64.urlsafe_b64decode(session + "=" * (-len(session) % 4)),
             )
 
-        # https://github.com/HellBoy-OP/Telethon/blob/v1/telethon/sessions/string.py
+        # https://github.com/badmunda98/Telethon/blob/v1/telethon/sessions/string.py
         new_session = CURRENT_VERSION + StringSession.encode(
             struct.pack(
                 _STRUCT_PREFORMAT.format(4),
