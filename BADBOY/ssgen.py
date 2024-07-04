@@ -117,7 +117,6 @@ def pyro_session():
         from pyrogram import Client
         
     clear_screen()
-    print(BADBOY)
     print(x)
 
     # generate a session
