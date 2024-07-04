@@ -1,4 +1,8 @@
 aiohttp
+https://github.com/badmunda98/BadBoy1/archive/BadBoy.zip
+https://github.com/badmunda98/BadBoy2/archive/sukh.zip
+python-decouple
+python-dotenv
 cairosvg
 DateTime
 emoji
