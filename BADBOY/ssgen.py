@@ -56,7 +56,6 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(BadBoy)
     print(x)
 
     # the imports
