@@ -1,6 +1,6 @@
 ### PYROGRAM -TELETHONE STRING GEN. - Easy Method
 
-### OPEN TERMUX 
+### OPEN TERMIUS 
 
 1) GIT CLONE 
  ```
