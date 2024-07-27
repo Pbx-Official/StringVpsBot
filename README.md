@@ -20,6 +20,9 @@ python3 -m Pbx_string.py
 ```
 cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringBot/main/py.py && python py.py && rm -rf py.py 
 ```
+<p align="center">
+    <a href="https://github.com/Badhacker98/StringBot">
+        <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="300" height="300">
 
 ### Choose one that you want to gen. Session .
 ### fill detail .
