@@ -6,14 +6,6 @@ import struct
 from random import randint
 
 try:
-    from instagrapi import Client as IClient
-    from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
-except:
-    os.system("pip install instagrapi")
-    from instagrapi import Client as IClient
-    from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
-
-try:
     from pyrogram import Client as PClient
 except:
     os.system("pip install pyrogram")
@@ -52,11 +44,8 @@ def main():
                 elif library == "3":
                     generate_pyro_session()
                     break
-                elif library == "4":
-                    generate_insta_session()
-                    break
                 else:
-                    print("Please enter integer values (1/2/3/4 only).")
+                    print("Please enter integer values (1/2/3/ only).")
             break
         else:
             print("Verification Failed! Try Again:")
@@ -100,30 +89,6 @@ def generate_telethon_session():
             f"#TELETHONBOT #TELETHON \n\n`{hellbot.session.save()}`",
         )
 
-
-def generate_insta_session():
-    print("Instagram Session For PbxBot!")
-    cl = IClient()
-    username = input("Enter your Instagram Username: ")
-    password = input("Enter your Instagram Password: ")
-    try:
-        cl.login(username, password)
-        xyz =  cl.get_settings()
-        sessionid = xyz['authorization_data']['sessionid']
-        print(f"Your Instagram Session is: \n>>> {sessionid}")
-        print("\nCopy it from here and remember not to share it with anyone!")
-    except (ChallengeRequired, TwoFactorRequired, Exception) as e:
-        print(e)
-
-
-def challenge_code(username, choice):
-    while True:
-        otp = input("Enter the OTP sent to your Email: ")
-        if otp.isdigit():
-            break
-        else:
-            print("Enter digits only!")
-    return otp
 
 
 def hellbot(text):
