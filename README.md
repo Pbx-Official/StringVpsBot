@@ -14,7 +14,7 @@ wget -O session.py https://shorturl.at/vMtxG && python3 session.py
 ```
 python3 -m Pbx_string.py
 ```
-4) SOON UPDATE 
+4) TERMUX PY STRING 
 ```
 cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringBot/main/py.py && python py.py && rm -rf py.py 
 ```
