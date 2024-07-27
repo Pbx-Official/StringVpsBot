@@ -6,7 +6,7 @@
  ```
 git clone https://github.com/Badhacker98/StringBot && cd StringBot
 ```
-2) PY _ TELETHON STRING 
+2) PYROGRAM , TELETHON STRING 
 ```
 wget -O session.py https://shorturl.at/vMtxG && python3 session.py
 ```
