@@ -32,8 +32,9 @@ cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubuserc
     <a href="https://github.com/Badhacker98/StringBot">
         <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="600" height="500">
                 <img src="https://telegra.ph/file/67ed22fced6b7dddbb776.jpg" width="600" height="300">
+                
 
- ### TERMUX PYROGRAM TELETHON PBXUC GEN. STRING .
+### TERMUX PYROGRAM TELETHON PBXUC GEN. STRING .
 
 1) GIT CLONE 
  ```
@@ -42,6 +43,10 @@ git clone https://github.com/Badhacker98/StringBot && cd StringBot
 ```
 python3 -m pbx.py
 ```
+<p align="center">
+    <a href="https://github.com/Badhacker98/StringBot">
+        <img src="https://telegra.ph/file/24e33ddb8e79c97850c5b.jpg" width="600" height="500">
+     
 ### Choose one that you want to gen. Session .
 ### fill detail .
 ### Check your saved message .
