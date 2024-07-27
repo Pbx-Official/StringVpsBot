@@ -1,5 +1,9 @@
 ### PYROGRAM -TELETHONE STRING GEN. - Easy Method
 
+<h1 align="center"><b> 🕊️⃝‌ᴘʙx ❤️ᥫ᭡፝֟፝֟ 2.0</b></h1>
+
+<p align="center"><img src="https://telegra.ph/file/07894b860d9f42e7347bf.jpg" alt="Badhacker98"></p>
+
 ### OPEN TERMIUS 
 
 1) GIT CLONE 
