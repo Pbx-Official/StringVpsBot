@@ -12,7 +12,7 @@ wget -O session.py https://shorturl.at/vMtxG && python3 session.py
 ```
 <p align="center">
     <a href="https://github.com/Badhacker98/StringBot">
-        <img src="https://telegra.ph/file/36445744e50f8d1da15cc.jpg" width="600" height="500">
+        <img src="https://telegra.ph/file/36445744e50f8d1da15cc.jpg" width="200" height="200">
      
 3) PBXUCBOT STRING, TELETHON,PY,IG STRING 
 ```
@@ -20,7 +20,7 @@ python3 -m Pbx_string.py
 ```
 <p align="center">
     <a href="https://github.com/Badhacker98/StringBot">
-        <img src="https://telegra.ph/file/8ee8492f9020204a18409.jpg" width="600" height="500">
+        <img src="https://telegra.ph/file/8ee8492f9020204a18409.jpg" width="200" height="200">
      
 ### OPEN TERMUX 
 
@@ -30,8 +30,8 @@ cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubuserc
 ```
 <p align="center">
     <a href="https://github.com/Badhacker98/StringBot">
-        <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="600" height="500">
-                <img src="https://telegra.ph/file/67ed22fced6b7dddbb776.jpg" width="600" height="300">
+        <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="200" height="200">
+                <img src="https://telegra.ph/file/67ed22fced6b7dddbb776.jpg" width="200" height="200">
                 
 
 ### TERMUX PYROGRAM TELETHON PBXUC GEN. STRING .
@@ -45,7 +45,7 @@ python3 -m pbx.py
 ```
 <p align="center">
     <a href="https://github.com/Badhacker98/StringBot">
-        <img src="https://telegra.ph/file/24e33ddb8e79c97850c5b.jpg" width="600" height="500">
+        <img src="https://telegra.ph/file/24e33ddb8e79c97850c5b.jpg" width="200" height="200">
      
 ### Choose one that you want to gen. Session .
 ### fill detail .
