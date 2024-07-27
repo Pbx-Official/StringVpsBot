@@ -22,7 +22,8 @@ cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubuserc
 ```
 <p align="center">
     <a href="https://github.com/Badhacker98/StringBot">
-        <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="300" height="300">
+        <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="600" height="500">
+                <img src="https://telegra.ph/file/67ed22fced6b7dddbb776.jpg" width="600" height="500">
 
 ### Choose one that you want to gen. Session .
 ### fill detail .
