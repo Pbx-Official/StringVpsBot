@@ -16,7 +16,7 @@ python3 -m Pbx_string.py
 ```
 4) SOON UPDATE 
 ```
-cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringBot/blob/main/py.py && python py.py && rm -rf py.py 
+cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringBot/main/py.py && python py.py && rm -rf py.py 
 ```
 
 ### Choose one that you want to gen. Session .
