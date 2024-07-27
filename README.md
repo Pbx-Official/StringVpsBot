@@ -2,7 +2,7 @@
 
 ### OPEN TERMUX 
 
-```
+1. ```
 git clone https://github.com/Badhacker98/StringBot && cd StringBot
 ```
 ```
