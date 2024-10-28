@@ -28,7 +28,7 @@ python3 -m Pbx_string.py
 
 1) TERMUX PY STRING
 ```
-cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringBot/main/py.py && python py.py && rm -rf py.py 
+cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringVpsBot/main/py.py && python py.py && rm -rf py.py 
 ```
 <p align="center">
     <a href="https://github.com/Badhacker98/StringBot">
@@ -40,7 +40,7 @@ cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubuserc
 
 1) GIT CLONE 
  ```
-git clone https://github.com/Badhacker98/StringBot && cd StringBot
+git clone https://github.com/Badhacker98/StringVpsBot && cd StringVpsBot
 ```
 ```
 python3 -m pbx.py
