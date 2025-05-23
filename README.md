@@ -1,19 +1,19 @@
 ### PYROGRAM -TELETHONE STRING GEN. - Easy Method
 
-<p align="center"><img src="https://telegra.ph/file/07894b860d9f42e7347bf.jpg" alt="Badhacker98"></p>
+<p align="center"><img src="https://telegra.ph/file/07894b860d9f42e7347bf.jpg" alt="Pbx-Official"></p>
 
 ### OPEN TERMIUS 
 
 1) GIT CLONE 
  ```
-git clone https://github.com/Badhacker98/StringBot && cd StringBot
+git clone https://github.com/Pbx-Official/StringBot && cd StringBot
 ```
 2) PYROGRAM , TELETHON STRING 
 ```
 wget -O session.py https://shorturl.at/vMtxG && python3 session.py
 ```
 <p align="center">
-    <a href="https://github.com/Badhacker98/StringBot">
+    <a href="https://github.com/Pbx-Official/StringBot">
         <img src="https://telegra.ph/file/36445744e50f8d1da15cc.jpg" width="200" height="200">
      
 3) PBXUCBOT STRING, TELETHON,PY,IG STRING 
@@ -21,17 +21,17 @@ wget -O session.py https://shorturl.at/vMtxG && python3 session.py
 python3 -m Pbx_string.py
 ```
 <p align="center">
-    <a href="https://github.com/Badhacker98/StringBot">
+    <a href="https://github.com/Pbx-Official/StringBot">
         <img src="https://telegra.ph/file/8ee8492f9020204a18409.jpg" width="200" height="200">
      
 ### OPEN TERMUX 
 
 1) TERMUX PY STRING
 ```
-cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Badhacker98/StringVpsBot/main/py.py && python py.py && rm -rf py.py 
+cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubusercontent.com/Pbx-Official/StringVpsBot/main/py.py && python py.py && rm -rf py.py 
 ```
 <p align="center">
-    <a href="https://github.com/Badhacker98/StringBot">
+    <a href="https://github.com/Pbx-Official/StringBot">
         <img src="https://telegra.ph/file/d657bfcf6b70e487619ac.jpg" width="200" height="200">
                 <img src="https://telegra.ph/file/67ed22fced6b7dddbb776.jpg" width="200" height="200">
                 
@@ -40,13 +40,13 @@ cd && rm -rf py.py && pkg install -y python wget && wget https://raw.githubuserc
 
 1) GIT CLONE 
  ```
-git clone https://github.com/Badhacker98/StringVpsBot && cd StringVpsBot
+git clone https://github.com/Pbx-Official/StringVpsBot && cd StringVpsBot
 ```
 ```
 python3 -m pbx.py
 ```
 <p align="center">
-    <a href="https://github.com/Badhacker98/StringBot">
+    <a href="https://github.com/Pbx-Official/StringBot">
         <img src="https://telegra.ph/file/24e33ddb8e79c97850c5b.jpg" width="200" height="200">
      
 ### Choose one that you want to gen. Session .
@@ -56,4 +56,5 @@ python3 -m pbx.py
 
 
 ### > ᴍᴀᴅᴅ ʙʏ [⎯꯭̽🇨🇦꯭꯭ ⃪В꯭α꯭∂ ꯭м꯭υ꯭η∂꯭α_꯭آآ⎯꯭ ꯭̽🌸](https://t.me/ll_BAD_MUNDA_ll)
+>
 > 
